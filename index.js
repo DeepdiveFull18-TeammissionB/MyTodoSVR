@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
-const port = 3000
+// const port = 3000
+// (수정) 아래 코드로 변경!
+const port = process.env.PORT || 3000;
 const bodyParser = require('body-parser')
 const Todo = require("./models/Todo")
 const config = require("./config/key")
